@@ -1,0 +1,32 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #c4b5fd; border-radius: 10px; }
+
+/* Markdown prose overrides for itinerary cards */
+.itinerary-content h2 {
+  @apply text-xl font-bold text-purple-800 mt-6 mb-3;
+}
+.itinerary-content h3 {
+  @apply text-lg font-semibold text-gray-800 mt-4 mb-2;
+}
+.itinerary-content p {
+  @apply text-gray-700 leading-relaxed mb-3;
+}
+.itinerary-content ul {
+  @apply list-disc list-inside space-y-1 mb-3;
+}
+.itinerary-content li {
+  @apply text-gray-700;
+}
+.itinerary-content strong {
+  @apply font-semibold text-gray-900;
+}
+.itinerary-content hr {
+  @apply border-purple-200 my-4;
+}
