@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 3001;
 app.use(cors({
   origin: process.env.NODE_ENV === 'production'
     ? process.env.FRONTEND_URL
-    : ['http://localhost:3000', 'http://127.0.0.1:3000'],
+    : ['http://localhost:3000', 'http://127.0.0.1:3000', 'https://travel-dusky-three.vercel.app'],
   credentials: true,
 }));
 app.use(express.json({ limit: '10mb' }));
