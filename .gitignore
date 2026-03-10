@@ -13,7 +13,7 @@ dist-ssr
 *.local
 
 # Next.js build output
-.next
+**/.next
 out
 
 # Editor directories and files
